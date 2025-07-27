@@ -1,1 +1,3 @@
-# Image-gallery
+This project features a responsive image gallery built with pure HTML and CSS, using Flexbox for fluid layout management. It focuses on clean design, smooth interactivity, and sharp visual details — including subtle zoom effects and animated text overlays on hover.
+It also applies styling best practices like scalable rem units, modular class structure, and elegant transitions using transform and transition. It's a great showcase of how CSS alone can create rich user experiences without relying on external libraries.
+Perfect for anyone interested in minimalist UI/UX design and reusable front-end components.
