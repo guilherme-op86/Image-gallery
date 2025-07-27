@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(196, 195, 195);
+    height: 100vh;
+    gap: 1rem;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 2px 2px 15px 6px black;
+}
+
+.image-container{
+    flex-basis: calc(25% - 1rem);
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-image{
+    max-width: 100%;
+    display: block;
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+}
+
+.image-container a{
+    text-decoration: none;
+}
+
+.image-text{
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    padding: .3rem;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.image-container:hover .image-text{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.gallery-image:hover{
+    transform: scale(1.03);
+}
+
+.image-container::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    inset: 0;
+    opacity: .5;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+
+.image-container:hover::after{
+   opacity: 0;
+}
+
+
+
+
